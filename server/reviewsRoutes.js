@@ -8,23 +8,31 @@ reviewsRouter.get('/', (req, res) => {
   const url= `${host}/reviews${req.url}`
   fetch(url)
     .then(response => response.json())
-    .then(json => res.json(json));
+    .then(json => res.json(json))
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 reviewsRouter.get('/:id', (req, res) => {
   const url= `${host}/reviews${req.url}`
   fetch(url)
     .then(response => response.json())
-    .then(json => res.json(json));
+    .then(json => res.json(json))
+    .catch(err => {
+      console.log(err);
+    });
 });
 
-// reviewsRouter.put('/', (req, res) => {
-//   const url= `${host}/reviews${req.url}`
-//   console.log(req.body._id)
-//   fetch(url, { method: 'PUT', body: { _id: req.body._id }})
-//     .then(response => response.json())
-//     .then(json => res.json(json));
-// });
+reviewsRouter.put('/', (req, res) => {
+  const url= `${host}/reviews${req.url}`
+  const body = { _id: req.body._id };
+  body.toString();
+  console.log(body)
+  fetch(url, { method: 'PUT', body: body})
+    .then(response => response.json())
+    .then(json => res.json(json));
+});
 
 
 module.exports = reviewsRouter;
