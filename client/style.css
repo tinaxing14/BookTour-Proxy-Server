@@ -1,0 +1,32 @@
+body {
+  display:flex;
+  flex-direction: column;
+  justify-content: stretch;
+}
+
+#gallery_traveler {
+  display:flex;
+  flex-direction: row;
+  justify-content: stretch;
+  margin:0 15% 0 15%;
+}
+
+#gallery {
+  width:65%;
+  margin-top: 5%;
+}
+
+#travelerbooking {
+  width:35%;
+  margin-top: 5%;
+  margin-left:-22%;
+}
+
+#Reviews {
+  margin: 10px 15% 10px 15%;
+}
+
+#itinerary {
+  margin: 0 15% 0 15%;
+}
+
