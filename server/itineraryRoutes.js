@@ -9,6 +9,9 @@ itineraryRouter.get('/', (req, res) => {
   fetch(url)
     .then(response => response.json())
     .then(json => res.json(json))
+    .catch(err => {
+      console.log(err);
+    });
 });
 
 
