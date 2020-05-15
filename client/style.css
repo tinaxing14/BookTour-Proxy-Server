@@ -9,9 +9,11 @@ body {
   margin:0 10% -3% 10%;
 }
 
-img{
+.img_header{
   max-width: 100%;
   max-height: 100%;
+  padding-top: 3%;
+  min-width: 800px;
 }
 
 #gallery_traveler {
@@ -19,17 +21,20 @@ img{
   flex-direction: row;
   justify-content: stretch;
   margin:0 10% 0 10%;
+  max-height:600px;
 }
 
 #gallery {
-  width:65%;
   margin-top: 5%;
+  margin-left:7%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 #travelerbooking {
-  width:35%;
-  margin-top: 3%;
-  margin-left:-30%;
+  margin-top: 2.5%;
+  position: relative;
+  left:-250px;
 }
 
 #Reviews {
@@ -37,10 +42,29 @@ img{
 }
 
 .itinerary_sider {
-  margin: 0 15% 0 15%;
+  margin: 2% 15% 0 15%;
   display: flex;
   flex-direction: row;
   justify-content: stretch;
+  align-items: flex-start;
+}
+
+#itinerary {
+  width:70%;
+  min-width:650px;
+}
+
+.sider {
+  width:30%;
+  padding-top: 2%;
+  padding-left: 0%;
+}
+
+.image_sider{
+  max-width: 100%;
+  max-height: 100%;
+  min-height: 400px;
+  min-width:220px;
 }
 
 
