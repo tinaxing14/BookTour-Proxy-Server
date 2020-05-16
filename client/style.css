@@ -1,70 +1,80 @@
-
-body {
-  display:flex;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
   flex-direction: column;
-  justify-content: stretch;
 }
 
 .header{
-  margin:0 10% -3% 10%;
+  max-width: 100vw;
 }
 
 .img_header{
   max-width: 100%;
   max-height: 100%;
-  padding-top: 3%;
   min-width: 800px;
 }
 
 #gallery_traveler {
   display:flex;
   flex-direction: row;
-  justify-content: stretch;
-  margin:0 10% 0 10%;
+  justify-content: space-between;
+  margin:1% auto;
   max-height:600px;
+  align-items: flex-start;
 }
 
 #gallery {
-  margin-top: 5%;
-  margin-left:7%;
   max-width: 100%;
   max-height: 100%;
 }
 
 #travelerbooking {
-  margin-top: 2.5%;
   position: relative;
   left:-250px;
+  margin-top: -25px;
+  z-index: 1;
 }
 
 #Reviews {
-  margin: 10px 15% 10px 15%;
+  margin: 30px 10% 30px 10%;
 }
 
 .itinerary_sider {
-  margin: 2% 15% 0 15%;
   display: flex;
   flex-direction: row;
-  justify-content: stretch;
-  align-items: flex-start;
-}
-
-#itinerary {
-  width:70%;
-  min-width:650px;
+  margin: 0 auto;
+  justify-content: space-around;
+  padding-left: 20px;
 }
 
 .sider {
   width:30%;
-  padding-top: 2%;
-  padding-left: 0%;
+  padding-top: 1%;
 }
 
 .image_sider{
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 90%;
+  max-height: 90%;
   min-height: 400px;
-  min-width:220px;
+  object-fit: cover;
+
+}
+
+.itineraryHeaderPhoto {
+  min-width: 300px;
+  margin:auto;
+  object-fit: cover;
+  padding-top: 3%;
+  overflow: hidden;
+}
+
+.itinerary_container {
+  display:flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  
 }
 
 
