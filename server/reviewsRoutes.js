@@ -6,6 +6,7 @@ const host = 'http://127.0.0.1:3001';
 
 reviewsRouter.get('/', (req, res) => {
   const url= `${host}/reviews${req.url}`
+  console.log(url)
   fetch(url)
     .then(response => response.json())
     .then(json => res.json(json))
@@ -16,6 +17,7 @@ reviewsRouter.get('/', (req, res) => {
 
 reviewsRouter.get('/:id', (req, res) => {
   const url= `${host}/reviews${req.url}`
+  console.log(url)
   fetch(url)
     .then(response => response.json())
     .then(json => res.json(json))
@@ -26,6 +28,7 @@ reviewsRouter.get('/:id', (req, res) => {
 
 reviewsRouter.put('/', (req, res) => {
   const url= `${host}/reviews${req.url}`
+  console.log(url)
   const body = { _id: req.body._id };
   body.toString();
   console.log(body)

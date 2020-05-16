@@ -2,7 +2,7 @@ const express = require('express');
 const itineraryRouter = express.Router();
 const fetch = require('node-fetch')
 
-const host = 'http://127.0.0.1:3002';
+const host = 'http://54.190.52.239';
 
 itineraryRouter.get('/', (req, res) => {
   const url =`${host}/tour`

@@ -2,7 +2,7 @@ const express = require('express');
 const travelersRouter = express.Router();
 const fetch = require('node-fetch')
 
-const host = 'http://127.0.0.1:3000';
+const host = 'http://3.23.167.116:80';
 
 travelersRouter.get('/:id/price', (req, res) => {
   const url =`${host}/api/trip/${req.url}`

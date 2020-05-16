@@ -25,6 +25,9 @@ app.use('/reviews', reviewsRouter);
 app.use('/tour', itineraryRouter);
 app.use('/tripAdvisor', galleryRouter);
 
+app.use('/image', express.static('client/image'))
+
+
 
 
 
