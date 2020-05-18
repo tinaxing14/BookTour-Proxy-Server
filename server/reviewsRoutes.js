@@ -2,7 +2,7 @@ const express = require('express');
 const reviewsRouter = express.Router();
 const fetch = require('node-fetch');
 
-const host = 'http://127.0.0.1:3001';
+const host = 'http://3.12.90.50:3000';
 
 reviewsRouter.get('/', (req, res) => {
   const url= `${host}/reviews${req.url}`
@@ -30,9 +30,14 @@ reviewsRouter.put('/', (req, res) => {
   const url= `${host}/reviews${req.url}`
   console.log(url)
   const body = { _id: req.body._id };
-  body.toString();
   console.log(body)
-  fetch(url, { method: 'PUT', body: body})
+  fetch(url, { 
+    method: 'PUT', 
+    body: JSON.stringify(body),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
     .then(response => response.json())
     .then(json => res.json(json));
 });
