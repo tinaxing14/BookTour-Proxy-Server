@@ -10,6 +10,3 @@ COPY . .
 
 EXPOSE 4200
 CMD ["npm", "start"]
-
-# docker build -t tripadvisorbooking .
-# docker run -it -p 3000:3000 tripadvisorbooking
