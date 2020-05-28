@@ -1,6 +1,5 @@
 # BookTour App Proxy-Server
 
-> Project description
 A proxy server served all four components of the BookTour app.
 
 ## Getting Started
