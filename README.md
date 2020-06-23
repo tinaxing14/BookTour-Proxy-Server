@@ -1,6 +1,6 @@
 # BookTour App Proxy-Server
 
-A proxy server served all four components of the BookTour app.
+A proxy server served all four microservices of the BookTour app.
 
 ## Getting Started
 > Before start, please download all related modules at the bottom of the page and have them running on your localhost.
